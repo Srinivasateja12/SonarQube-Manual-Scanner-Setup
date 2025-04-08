@@ -83,7 +83,8 @@ Add this line at the bottom:
 
 ### 4. Verify Installation
 
-> /opt/sonarscanner/bin/sonar-scanner -v
+> export PATH=$PATH:/opt/sonar-scanner/bin
+>>  /opt/sonarscanner/bin/sonar-scanner -v
 
 ### 5. Create sonar-project.properties in the cloned project directory
 
