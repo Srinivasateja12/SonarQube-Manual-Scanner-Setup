@@ -99,3 +99,11 @@ Add this line at the bottom:
 # Result
 
 Once the scan is complete, open your SonarQube dashboard at http://<SONAR_SERVER_IP>:9000 to view the detailed analysis report.
+
+## Notes
+
+- Do not run SonarQube as a root user due to Elasticsearch restrictions.
+
+- Make sure ports (like 9000) are open in the firewall settings of your VM.
+
+
