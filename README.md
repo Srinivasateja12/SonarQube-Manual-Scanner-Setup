@@ -31,24 +31,24 @@ This project demonstrates how to set up a SonarQube server and manually trigger 
 
  > cd /opt
  >> wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-25.3.0.104237.zip
- >> unzip sonarqube-25.3.0.104237.zip
- >> mv sonarqube-25.3.0.104237 sonar
+ >>> unzip sonarqube-25.3.0.104237.zip
+ >>>> mv sonarqube-25.3.0.104237 sonar
 
 ### 4. Create non-root user and set permissions
 
--- > useradd sonaruser
--- > chown -R sonaruser:sonaruser /opt/sonar
+> useradd sonaruser
+>> chown -R sonaruser:sonaruser /opt/sonar
 
 ### 5. Start SonarQube
 
 > cd /opt/sonar/bin/linux-x86-64
-> ./sonar.sh start
+>> ./sonar.sh start
 
 ### 6. Access the Web UI
 
-**URL: http://<SONAR_SERVER_IP>:9000**
+URL: **http://<SONAR_SERVER_IP>:9000**
 
-**Login: admin / admin**
+Login: **admin / admin**
 
 **Change the password when prompted**
 
@@ -67,9 +67,9 @@ Generate and save the token
 ### 2. Install SonarScanner
 
 > cd /opt
-> wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-7.0.2.4839-linux-x64.zip
-> unzip sonar-scanner-cli-7.0.2.4839-linux-x64.zip
-> mv sonar-scanner-7.0.2.4839-linux-x64 sonarscanner
+>> wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-7.0.2.4839-linux-x64.zip
+>>> unzip sonar-scanner-cli-7.0.2.4839-linux-x64.zip
+>>>> mv sonar-scanner-7.0.2.4839-linux-x64 sonarscanner
 
 ### 3. Configure SonarScanner
 
@@ -88,9 +88,9 @@ Add this line at the bottom:
 ### 5. Create sonar-project.properties in the cloned project directory
 
 > sonar.projectKey=your_project_key
-> sonar.sources=.
-> sonar.host.url=http://<SONAR_SERVER_IP>:9000
-> sonar.login=<your_generated_token>
+>> sonar.sources=.
+>>> sonar.host.url=http://<SONAR_SERVER_IP>:9000
+>>>> sonar.login=<your_generated_token>
 
 ### 6. Run the Manual Scan
 
