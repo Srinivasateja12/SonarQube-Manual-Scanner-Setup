@@ -54,7 +54,7 @@ Login: **admin / admin**
 
 ### 7. Generate a Token
 
-** Go to Administration > Security **
+**Go to Administration > Security**
 
 Generate and save the token
 
