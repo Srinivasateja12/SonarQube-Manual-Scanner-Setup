@@ -29,15 +29,15 @@ This project demonstrates how to set up a SonarQube server and manually trigger 
 
 ### 3. Download and Setup SonarQube
 
-> cd /opt
-> wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-25.3.0.104237.zip
-> unzip sonarqube-25.3.0.104237.zip
-> mv sonarqube-25.3.0.104237 sonar
+-- > cd /opt
+-- > wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-25.3.0.104237.zip
+-- > unzip sonarqube-25.3.0.104237.zip
+-- > mv sonarqube-25.3.0.104237 sonar
 
 ### 4. Create non-root user and set permissions
 
-> useradd sonaruser
-> chown -R sonaruser:sonaruser /opt/sonar
+-- > useradd sonaruser
+-- > chown -R sonaruser:sonaruser /opt/sonar
 
 ### 5. Start SonarQube
 
