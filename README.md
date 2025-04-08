@@ -20,8 +20,8 @@ This project demonstrates how to set up a SonarQube server and manually trigger 
 
 ### 1. Switch to root and update the system
 
-> sudo su
-> apt update
+>> sudo su
+>> apt update
 
 ### 2. Install Java 17
 
